@@ -23,7 +23,7 @@ namespace University_Simulation.Models
 
 
         }
-        void Students()
+        public void Students()
         {
             var students = _Persons.FindAll(x => x._Role == "Student");
 
@@ -32,7 +32,7 @@ namespace University_Simulation.Models
                 student.Fullname();
             }
         }
-        void Teachers()
+        public void Teachers()
         {
             var teachers = _Persons.FindAll(x => x._Role == "Teacher");
 

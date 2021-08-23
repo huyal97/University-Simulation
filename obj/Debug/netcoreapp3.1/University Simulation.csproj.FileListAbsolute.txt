@@ -1,0 +1,13 @@
+C:\Users\hyalc\source\repos\University Simulation\bin\Debug\netcoreapp3.1\University Simulation.exe
+C:\Users\hyalc\source\repos\University Simulation\bin\Debug\netcoreapp3.1\University Simulation.deps.json
+C:\Users\hyalc\source\repos\University Simulation\bin\Debug\netcoreapp3.1\University Simulation.runtimeconfig.json
+C:\Users\hyalc\source\repos\University Simulation\bin\Debug\netcoreapp3.1\University Simulation.runtimeconfig.dev.json
+C:\Users\hyalc\source\repos\University Simulation\bin\Debug\netcoreapp3.1\University Simulation.dll
+C:\Users\hyalc\source\repos\University Simulation\bin\Debug\netcoreapp3.1\University Simulation.pdb
+C:\Users\hyalc\source\repos\University Simulation\obj\Debug\netcoreapp3.1\University Simulation.csprojAssemblyReference.cache
+C:\Users\hyalc\source\repos\University Simulation\obj\Debug\netcoreapp3.1\University Simulation.AssemblyInfoInputs.cache
+C:\Users\hyalc\source\repos\University Simulation\obj\Debug\netcoreapp3.1\University Simulation.AssemblyInfo.cs
+C:\Users\hyalc\source\repos\University Simulation\obj\Debug\netcoreapp3.1\University Simulation.csproj.CoreCompileInputs.cache
+C:\Users\hyalc\source\repos\University Simulation\obj\Debug\netcoreapp3.1\University Simulation.dll
+C:\Users\hyalc\source\repos\University Simulation\obj\Debug\netcoreapp3.1\University Simulation.pdb
+C:\Users\hyalc\source\repos\University Simulation\obj\Debug\netcoreapp3.1\University Simulation.genruntimeconfig.cache

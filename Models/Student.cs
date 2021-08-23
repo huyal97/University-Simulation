@@ -20,11 +20,11 @@ namespace University_Simulation.Models
             
 
         }
-        public int AverageScore()
+        public double AverageScore()
         {
             var depart = _Departments.Find(x => x._Name == base._DepartmentName);
 
-            int averageScore = _MidtermScore * (depart._MidtermScoreRatio / 100) + _FinalScore * (depart._FinalScoreRatio);
+            double averageScore = (_MidtermScore * (depart._MidtermScoreRatio ) + _FinalScore * (depart._FinalScoreRatio))/100;
             return averageScore;
         }
         public bool IsPassed()

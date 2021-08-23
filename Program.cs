@@ -44,8 +44,7 @@ namespace University_Simulation
             foreach (string line in DepartmentCsv)
             {               
                 Department newDepartment = new Department(line,Students,Teachers);
-                Deparments.Add(newDepartment);
-                Console.WriteLine(line);
+                Deparments.Add(newDepartment);             
             }
 
             //University
@@ -57,6 +56,7 @@ namespace University_Simulation
                 University uni = new University(line,Deparments,Persons);
                 Universities.Add(uni);
             }
+            bool testbool = Students[3].IsPassed();
         }
     }
 }
