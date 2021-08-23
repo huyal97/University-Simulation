@@ -55,8 +55,7 @@ namespace University_Simulation
             {
                 University uni = new University(line,Deparments,Persons);
                 Universities.Add(uni);
-            }
-            bool testbool = Students[3].IsPassed();
+            }           
         }
     }
 }
