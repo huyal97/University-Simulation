@@ -10,11 +10,17 @@ namespace University_Simulation.Models
         public int _DataOfEstablishment { get; set; }
         
 
-        public University()
+        public University(string line)
         {
-            
+            string[] parameters = line.Split(',');
+            _Name = parameters[0];
+            _DataOfEstablishment = Int32.Parse(parameters[1]);          
         }
         void Students()
+        {
+
+        }
+        void Teachers()
         {
 
         }
