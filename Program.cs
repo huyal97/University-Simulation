@@ -30,7 +30,7 @@ namespace University_Simulation
                 }
                 else if (parameter[2] == "Student")
                 {
-                    Student newPerson = new Student(parameter);
+                    Student newPerson = new Student(parameter,Deparments);
 
                     Persons.Add(newPerson);
                     Students.Add(newPerson);
@@ -54,7 +54,7 @@ namespace University_Simulation
 
             foreach (string line in UniversityCsv)
             {
-                University uni = new University(line,Deparments);
+                University uni = new University(line,Deparments,Persons);
                 Universities.Add(uni);
             }
         }

@@ -22,11 +22,23 @@ namespace University_Simulation.Models
         }
         public int AverageScore()
         {
-            return 1;
+            var depart = _Departments.Find(x => x._Name == base._DepartmentName);
+
+            int averageScore = _MidtermScore * (depart._MidtermScoreRatio / 100) + _FinalScore * (depart._FinalScoreRatio);
+            return averageScore;
         }
         public bool IsPassed()
         {
-            return true;
+            var depart = _Departments.Find(x => x._Name == base._DepartmentName);
+
+            if (AverageScore() >= depart._MinimumPassingScore)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public void Work()
         {
