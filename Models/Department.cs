@@ -17,7 +17,7 @@ namespace University_Simulation.Models
         }
         public void FullName()
         {
-            Console.WriteLine($"{_UniversityName} {_Name} Department")
+            Console.WriteLine($"{_UniversityName} {_Name} Department");
         }
     }
     

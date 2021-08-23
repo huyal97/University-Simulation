@@ -4,7 +4,32 @@ using System.Text;
 
 namespace University_Simulation.Models
 {
-    class Student
+    public class Student : Person
     {
+        public int _MidtermScore { get; set; }
+        public int _FinalScore { get; set; }
+        
+
+
+        public Student(string[] parameter) : base(parameter[0], parameter[1], parameter[2], parameter[3])
+        {
+            _MidtermScore = Int32.Parse(parameter[5]);
+            _FinalScore = Int32.Parse(parameter[6]);
+            
+
+        }
+        public int AverageScore()
+        {
+            return 1;
+
+        }
+        public bool IsPassed()
+        {           
+                return true;
+        }
+        public void Work()
+        {
+            Console.WriteLine("Studying");
+        }
     }
 }
