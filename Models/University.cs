@@ -19,9 +19,6 @@ namespace University_Simulation.Models
 
             _Departments = departments.FindAll(x => x._UniversityName == this._Name);
             _Persons = persons;
-
-
-
         }
         public void Students()
         {
