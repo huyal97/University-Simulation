@@ -36,6 +36,17 @@ namespace University_Simulation
                     Students.Add(newPerson);
                 }
             }
+           
+            //Department 
+            string[] DepartmentCsv = System.IO.File.
+                ReadAllLines(@"C:\Users\hyalc\source\repos\University Simulation\Assets\Department.csv");
+            
+            foreach (string line in DepartmentCsv)
+            {               
+                Department newDepartment = new Department(line,Students,Teachers);
+                Deparments.Add(newDepartment);
+                Console.WriteLine(line);
+            }
 
             //University
             string[] UniversityCsv = System.IO.File.
@@ -43,20 +54,8 @@ namespace University_Simulation
 
             foreach (string line in UniversityCsv)
             {
-                University uni = new University(line);
+                University uni = new University(line,Deparments);
                 Universities.Add(uni);
-            }
-
-            //Department 
-            string[] DepartmentCsv = System.IO.File.
-                ReadAllLines(@"C:\Users\hyalc\source\repos\University Simulation\Assets\Department.csv");
-            
-            foreach (string line in DepartmentCsv)
-            {
-                
-                Department newDepartment = new Department(line,Students,Teachers);
-                Deparments.Add(newDepartment);
-                Console.WriteLine(line);
             }
         }
     }

@@ -8,13 +8,17 @@ namespace University_Simulation.Models
     {
         public string _Name { get; set; }
         public int _DataOfEstablishment { get; set; }
-        
+        public List<Department> _Departments { get; set; }
 
-        public University(string line)
+        public University(string line,List<Department> departments)
         {
             string[] parameters = line.Split(',');
             _Name = parameters[0];
-            _DataOfEstablishment = Int32.Parse(parameters[1]);          
+            _DataOfEstablishment = Int32.Parse(parameters[1]);
+
+            _Departments = departments.FindAll(x => x._UniversityName == this._Name);
+
+                     
         }
         void Students()
         {

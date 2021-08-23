@@ -8,11 +8,13 @@ namespace University_Simulation.Models
     {
         public int _MidtermScore { get; set; }
         public int _FinalScore { get; set; }
+        public List<Department> _Departments { get; set; }
         
 
 
-        public Student(string[] parameter) : base(parameter[0], parameter[1], parameter[2], parameter[3])
+        public Student(string[] parameter, List<Department> Deparments) : base(parameter[0], parameter[1], parameter[2], parameter[3])
         {
+            _Departments = Deparments;
             _MidtermScore = Int32.Parse(parameter[5]);
             _FinalScore = Int32.Parse(parameter[6]);
             
@@ -21,11 +23,10 @@ namespace University_Simulation.Models
         public int AverageScore()
         {
             return 1;
-
         }
         public bool IsPassed()
-        {           
-                return true;
+        {
+            return true;
         }
         public void Work()
         {
